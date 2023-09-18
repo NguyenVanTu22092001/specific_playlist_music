@@ -1,9 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 import artist from "../img/artist.jpg";
 import check from "../img/check.png";
-import { FaEllipsisH, FaHeadphones, FaCheck } from "react-icons/fa";
+import { FaEllipsisH, FaHeadphones } from "react-icons/fa";
 // banner
 function Banner() {
+  const [isFollowing, setIsFollowing] = useState(false);
+
+  // Function to toggle the follow state when the button is clicked
+  const toggleFollow = () => {
+    setIsFollowing((prevState) => !prevState);
+  };
   return (
     <div className="Banner">
       <img src={artist} alt="" className="bannerImg" />
@@ -35,12 +41,12 @@ function Banner() {
 
           <div className="right">
             <a href="/"> Play</a>
-            <a href="/">
-              <i>
+            <button onClick={toggleFollow}>
+              {/* <i>
                 <FaCheck />
-              </i>
-              Following
-            </a>
+              </i> */}
+              {isFollowing ? "Follow" : "Following"}
+            </button>
           </div>
         </div>
       </div>

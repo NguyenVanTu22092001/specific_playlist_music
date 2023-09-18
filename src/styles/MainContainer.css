@@ -105,7 +105,6 @@
     display: flex;
     align-items: center;
   }
-  
   .content .artist .right a {
     text-decoration: none;
     padding: 10px 30px;
@@ -128,6 +127,33 @@
   }
   
   .content .artist .right a:nth-child(2) {
+    background: rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    margin-right: 0;
+  }
+  
+  .content .artist .right button {
+    text-decoration: none;
+    padding: 10px 30px;
+    font-size: 18px;
+    color: #f1f1f1;
+    border-radius: 100vw;
+    margin: 0 20px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+  }
+  
+  /* .content .artist .right button i {
+    margin-right: 10px;
+    font-size: 14px;
+  } */
+  
+  /* .content .artist .right button:nth-child(1) {
+    background: #39aa24;
+  } */
+  
+  .content .artist .right button:nth-child(2) {
     background: rgba(0, 0, 0, 0.3);
     border: 1px solid rgba(255, 255, 255, 0.2);
     margin-right: 0;
