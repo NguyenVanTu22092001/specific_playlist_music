@@ -3,7 +3,7 @@ import { FaHeadphones, FaRegClock, FaRegHeart, FaHeart } from "react-icons/fa";
 import "../styles/LeftMenu.css";
 import MusicPlayer from "./MusicPlayer";
 import { Songs } from "./Songs";
-
+// display list of songs
 function AudioList() {
   const [songs, setSongs] = useState(Songs);
   const [song, setSong] = useState(songs[0].song);

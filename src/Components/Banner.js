@@ -2,6 +2,7 @@ import React from "react";
 import artist from "../img/artist.jpg";
 import check from "../img/check.png";
 import { FaEllipsisH, FaHeadphones, FaCheck } from "react-icons/fa";
+// banner
 function Banner() {
   return (
     <div className="Banner">
@@ -10,7 +11,7 @@ function Banner() {
       <div className="content">
         <div className="breadCrump">
           <p>
-            Home <span>/Popular Artist</span>
+            Home<span>/ Popular Artist</span>
           </p>
           <i>
             <FaEllipsisH />

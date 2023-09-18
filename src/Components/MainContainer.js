@@ -3,7 +3,7 @@ import "../styles/MainContainer.css";
 import { FaUsers } from "react-icons/fa";
 import { AudioList } from "./AudioList";
 import { Banner } from "./Banner";
-
+// top bar
 function MainContainer() {
   useEffect(() => {
     const allLi = document.querySelector(".menuList").querySelectorAll("li");

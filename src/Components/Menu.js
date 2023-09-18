@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import "../styles/LeftMenu.css";
-
+// display datamenu
 function Menu({ title, listObject }) {
   useEffect(() => {
     const allLi = document
